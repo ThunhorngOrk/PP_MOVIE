@@ -1,0 +1,290 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: transparent;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: red;
+}
+
+.logo span {
+  color: white;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: red;
+  font-weight: 500;
+}
+
+.nav-right input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.register {
+  margin-left: 10px;
+  background: red;
+  color: black;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 80vh;
+  width: 100%;
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
+    url( "https://i.pinimg.com/736x/eb/f1/4a/ebf14a5d3b21e60b907ae26b90205271.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.hero-content {
+  max-width: 500px;
+  
+}
+
+.hero-content h1 {
+  font-size: 100px;
+  letter-spacing: 5px;
+  color: rgb(248, 247, 247);
+  text-shadow: 5px  4px 20px rgba(249, 247, 247, 0.5);
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 20px;
+  text-shadow: 5px  4px 10px rgba(249, 247, 247, 0.5);
+}
+
+.hero-content span {
+  color: red;
+  font-weight: bold;
+  text-shadow: 5px 4px 10px red;
+}
+
+.play-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 2px solid red;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background: red;
+  color: black;
+}
+
+/* ================= CATEGORY ================= */
+.category {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.category button a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.category button {
+  margin: 0 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.category button:hover {
+  background: rgba(255, 255, 255, 0.144);
+  color: black;
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ================= MOST POPULAR ================= */
+.container {
+  padding:  100px 20px;
+}
+.container1 {
+  margin-top: -150px
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  width: 4px;
+  height: 35px;
+  background: rgb(255, 0, 0);
+  margin-right: 10px;
+}
+
+.header a {
+  color: #aaa;
+  text-decoration: none;
+}
+.head title {
+  padding: 20px 50px;
+  text-shadow: 5px 4px 10px rgb(249, 247, 247);
+}
+
+/* ================= SLIDER ================= */
+.slider-wrapper {
+  position: relative;
+  margin : 0px;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================= CARD ================= */
+.card {
+  min-width: 260px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.671);
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgb(255, 255, 255);
+}
+
+.card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 12px;
+}
+
+.info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* ================= NAV BUTTONS ================= */
+.nav {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav.left {
+  left: -10px;
+}
+
+.nav.right {
+  right: -10px;
+}
+
+/* ================= PROGRESS BAR ================= */
+.progress {
+  margin-top: 15px;
+  height: 4px;
+  background: #b91212;
+}
+
+.progress .line {
+  width: 60%;
+  height: 100%;
+  background: rgb(243, 242, 242);
+}
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: rgba(20, 20, 20, 0.95);
+    
+    position: fixed;
+    width: 100%;
+    height: 87px;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+

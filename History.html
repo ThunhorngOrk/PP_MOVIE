@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ActionFlix | Premium Action Entertainment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stream the best action movies with explosive scenes, heroic moments, and adrenaline-pumping sequences.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style_custom/test.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-explosion me-2"></i>HISTORYFLIX
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+                    <div class="nav-right">
+                        <section class="category">
+                            <input type="text" placeholder="Search..." id="search" />
+                        </section>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Drama.html">Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Home/index.html">Home</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="actionCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#actionCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#actionCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#actionCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100" alt="High Speed Action">
+                <div class="carousel-caption">
+                    <h1>HIGH SPEED ACTION</h1>
+                    <p>Experience adrenaline-pumping car chases, intense fight sequences, and breathtaking stunts in the
+                        most explosive action movie of the year.</p>
+                </div>
+                <div class="carousel-controls">
+                    <button class="btn btn-watch"><i class="fas fa-play me-2"></i> Watch Now</button>
+                    <button class="btn btn-more"><i class="fas fa-info-circle me-2"></i> More Info</button>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100" alt="Explosive Scenes">
+                <div class="carousel-caption">
+                    <h1>EXPLOSIVE SCENES</h1>
+                    <p>Stunning visual effects and pyrotechnics that will blow your mind. Witness destruction on an epic
+                        scale.</p>
+                </div>
+                <div class="carousel-controls">
+                    <button class="btn btn-watch"><i class="fas fa-play me-2"></i> Watch Now</button>
+                    <button class="btn btn-more"><i class="fas fa-info-circle me-2"></i> More Info</button>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/1200x/51/62/84/516284904599747f8aae5319fee0a1a0.jpg"
+                    class="d-block w-100" alt="Heroic Moments">
+                <div class="carousel-caption">
+                    <h1>HEROIC MOMENTS</h1>
+                    <p>Epic battles and legendary heroes in the fight for justice. Experience courage like never before.
+                    </p>
+                </div>
+                <div class="carousel-controls">
+                    <button class="btn btn-watch"><i class="fas fa-play me-2"></i> Watch Now</button>
+                    <button class="btn btn-more"><i class="fas fa-info-circle me-2"></i> More Info</button>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#actionCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#actionCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title">Search Movies</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-4">
+                        <input type="text" id="searchInput" class="form-control bg-dark text-light border-secondary"
+                            placeholder="Search for movies..." aria-label="Search">
+                        <button class="btn btn-danger" type="button" id="searchButton">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results">
+
+                    </div>
+                    <div class="recent-searches mt-4 d-none" id="recentSearches">
+                        <h6 class="text-muted mb-3">Recent Searches</h6>
+                        <div id="recentSearchesList" class="d-flex flex-wrap gap-2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="movieDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="movieModalTitle">Movie Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="movieModalBody">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container movie-section">
+        <div class="section-header">
+            <h2 class="section-title">Most Popular</h2>
+            <a href="#" class="view-all" <i class="fas fa-chevron-right ms-1"></i></a>
+        </div>
+
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/736x/e1/27/41/e127418ba78dcf382e27df6a2e32610b.jpg" alt="Movie 1">
+                <div class="movie-info">
+                    <div class="movie-title">Gladiator (2000)</div>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/736x/f4/06/09/f40609e7d97318c425f3ded5eb4bf686.jpg" alt="Movie 2">
+                <div class="movie-info">
+                    <div class="movie-title"> Braveheart (1995) </div>
+                    <div class="movie-meta">
+                        <span>2022</span>
+                        <span class="rating"><i class="fas fa-star"></i> 7.9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/1200x/2e/b5/b4/2eb5b45346f3cda77c9bce3c51229fd3.jpg" alt="Movie 3">
+                <div class="movie-info">
+                    <div class="movie-title">Saving Private Ryan (1998)</div>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span class="rating"><i class="fas fa-star"></i> 8.2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/1200x/15/4d/47/154d47115310045c5c2fcfbec450a696.jpg" alt="Movie 4">
+                <div class="movie-info">
+                    <div class="movie-title">Schindler’s List (1993)</div>
+                    <div class="movie-meta">
+                        <span>2021</span>
+                        <span class="rating"><i class="fas fa-star"></i> 7.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-header mt-5">
+            <h2 class="section-title">History Movies</h2>
+            <a href="/Allmovie/allhistory.html" class="view-all">View All <i class="fas fa-chevron-right ms-1"></i></a>
+        </div>
+
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/1200x/60/97/5f/60975fb6a7d2f63b5462220590456fe2.jpg"
+                    alt="Action Movie 1">
+                <div class="movie-info">
+                    <div class="movie-title">Titanic (1997)</div>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span class="rating"><i class="fas fa-star"></i> 8.8</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/1200x/d9/05/2d/d9052d5d38c0ac7749493a45b2db3273.jpg"
+                    alt="Action Movie 3">
+                <div class="movie-info">
+                    <div class="movie-title">The Last Samurai (2003)</div>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span class="rating"><i class="fas fa-star"></i> 8.3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/736x/99/db/30/99db30b640e27da7552ef148627ba2c9.jpg" alt="Action Movie 4">
+                <div class="movie-info">
+                    <div class="movie-title">Lincoln (2012)</div>
+                    <div class="movie-meta">
+                        <span>2021</span>
+                        <span class="rating"><i class="fas fa-star"></i> 7.6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/1200x/6f/38/6c/6f386cecff962fa8a73141633c3de0a2.jpg"
+                    alt="Action Movie 6">
+                <div class="movie-info">
+                    <div class="movie-title">Dunkirk (2017)</div>
+                    <div class="movie-meta">
+                        <span>2022</span>
+                        <span class="rating"><i class="fas fa-star"></i> 8.1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="footer-logo"><i class="fas fa-explosion me-2"></i>HISTORYFLIX</a>
+                        <p class="text-gray">The ultimate destination for high-octane action movies and
+                            adrenaline-pumping entertainment.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">Series</a></li>
+                            <li><a href="#">New Releases</a></li>
+                            <li><a href="#">My List</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-4">Genres</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Thriller</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Sci-Fi</a></li>
+                            <li><a href="#">Crime</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-4">Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2023 ActionFlix. All rights reserved. This is a demo website for educational purposes.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/script/homepage.js"></script>
+
+</body>
+
+</html>
