@@ -116,6 +116,11 @@ body {
   border: 1px solid white;
   cursor: pointer;
 }
+.category button a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
 
 .category button:hover {
   background: red;

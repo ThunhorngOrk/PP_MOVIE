@@ -64,11 +64,11 @@ function scrollSlider(direction) {
 =============================== */
 function searchPage() {
   const pages = {
-    "all anime": "/Allmovie/allanime.html",
-    "all horror": "/Allmovie/allhorror.html",
-    "all action": "/Allmovie/allaction.html",
-    "all drama": "/Allmovie/alldrama.html",
-    "all history": "/Allmovie/allhistory.html"
+    "all anime": "../Allmovie/allanime.html",
+    "all horror": "../Allmovie/allhorror.html",
+    "all action": "../Allmovie/allaction.html",
+    "all drama": "../Allmovie/alldrama.html",
+    "all history": "../Allmovie/allhistory.html"
   };
 
   const input = document.getElementById("search")?.value
