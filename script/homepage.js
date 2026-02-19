@@ -64,11 +64,11 @@ function scrollSlider(direction) {
 =============================== */
 function searchPage() {
   const pages = {
-    "anime": "../Anime.html",
-    "horror": "../Horror.html",
-    "action": "../Action.html",
-    "drama": "../Drama.html",
-    "history": "../History.html"
+    "anime": "../Home/Anime.html",
+    "horror": "../Home/Horror.html",
+    "action": "../Home/Action.html",
+    "drama": "../Home/Drama.html",
+    "history": "../Home/History.html"
   };
 
   const input = document.getElementById("search")?.value
