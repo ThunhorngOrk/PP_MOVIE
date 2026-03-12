@@ -63,22 +63,22 @@ function scrollSlider(direction) {
    SEARCH FUNCTION
 =============================== */
 function searchPage() {
-  const input = document.getElementById("search").value.toLowerCase().trim();
+  const input = document.getElementById("search").value.toLowerCase();
 
   if (input.includes("anime")) {
-    location.href = "/MOVIE/Allmovie/allanime.html";
+    location.href = "../Allmovie/allanime.html";
   }
   else if (input.includes("horror")) {
-    location.href = "/MOVIE/Allmovie/allhorror.html";
+    location.href = "../Allmovie/allhorror.html";
   }
   else if (input.includes("action")) {
-    location.href = "/MOVIE/Allmovie/allaction.html";
+    location.href = "../Allmovie/allaction.html";
   }
   else if (input.includes("drama")) {
-    location.href = "/MOVIE/Allmovie/alldrama.html";
+    location.href = "../Allmovie/alldrama.html";
   }
   else if (input.includes("history")) {
-    location.href = "/MOVIE/Allmovie/allhistory.html";
+    location.href = "../Allmovie/allhistory.html";
   }
   else {
     alert("Page not found");

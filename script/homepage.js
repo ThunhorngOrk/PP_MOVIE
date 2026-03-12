@@ -54,13 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
 =============================== */
 const slider = document.getElementById("slider");
 
-function searchPage() {
-  const input = document.getElementById("search").value.toLowerCase().trim();
+function scrollSlider(direction) {
+  if (!slider) return;
+  slider.scrollLeft += direction * 300;
+}
 
-  if (input.includes("anime")) location.href = "Home/Anime.html";
-  else if (input.includes("horror")) location.href = "Home/Horror.html";
-  else if (input.includes("action")) location.href = "Home/Action.html";
-  else if (input.includes("drama")) location.href = "Home/Drama.html";
-  else if (input.includes("history")) location.href = "Home/History.html";
+/* ===============================
+   SEARCH FUNCTION
+=============================== */
+function searchPage() {
+  const input = document.getElementById("search").value.toLowerCase();
+
+  if (input.includes("anime")) location.href = "../Home/Anime.html";
+  else if (input.includes("horror")) location.href = "../Home/Horror.html";
+  else if (input.includes("action")) location.href = "../Home/Action.html";
+  else if (input.includes("drama")) location.href = "../Home/Drama.html";
+  else if (input.includes("history")) location.href = "../Home/History.html";
   else alert("Movie category not found");
 }
