@@ -63,21 +63,12 @@ function scrollSlider(direction) {
    SEARCH FUNCTION
 =============================== */
 function searchPage() {
-  const pages = {
-    "anime": "../Home/Anime.html",
-    "horror": "../Home/Horror.html",
-    "action": "../Home/Action.html",
-    "drama": "../Home/Drama.html",
-    "history": "../Home/History.html"
-  };
+  const input = document.getElementById("search").value.toLowerCase();
 
-  const input = document.getElementById("search")?.value
-    .toLowerCase()
-    .trim();
-
-  if (pages[input]) {
-    window.location.href = pages[input];
-  } else {
-    alert("Page not found");
-  }
+  if (input.includes("anime")) location.href = "../Home/Anime.html";
+  else if (input.includes("horror")) location.href = "../Home/Horror.html";
+  else if (input.includes("action")) location.href = "../Home/Action.html";
+  else if (input.includes("drama")) location.href = "../Home/Drama.html";
+  else if (input.includes("history")) location.href = "../Home/History.html";
+  else alert("Movie category not found");
 }

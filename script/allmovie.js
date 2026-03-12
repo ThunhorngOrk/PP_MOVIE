@@ -63,21 +63,24 @@ function scrollSlider(direction) {
    SEARCH FUNCTION
 =============================== */
 function searchPage() {
-  const pages = {
-    "all anime": "../Allmovie/allanime.html",
-    "all horror": "../Allmovie/allhorror.html",
-    "all action": "../Allmovie/allaction.html",
-    "all drama": "../Allmovie/alldrama.html",
-    "all history": "../Allmovie/allhistory.html"
-  };
+  const input = document.getElementById("search").value.toLowerCase();
 
-  const input = document.getElementById("search")?.value
-    .toLowerCase()
-    .trim();
-
-  if (pages[input]) {
-    window.location.href = pages[input];
-  } else {
+  if (input.includes("anime")) {
+    location.href = "../Allmovie/allanime.html";
+  }
+  else if (input.includes("horror")) {
+    location.href = "../Allmovie/allhorror.html";
+  }
+  else if (input.includes("action")) {
+    location.href = "../Allmovie/allaction.html";
+  }
+  else if (input.includes("drama")) {
+    location.href = "../Allmovie/alldrama.html";
+  }
+  else if (input.includes("history")) {
+    location.href = "../Allmovie/allhistory.html";
+  }
+  else {
     alert("Page not found");
   }
 }
